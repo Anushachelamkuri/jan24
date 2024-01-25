@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Nav Bar</title>
+       <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <nav class="navbar-inverse" style="position:sticky;top:0; z-index:100px;">
+        <div class="navbar-header">
+            <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="#">Anusha</a>
+        </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                <li><a href="marquee.html"> Marquee</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="mediaQueries.html">mediaQueries</a></li>
+                <li><a href="show&hide.html">show&hide</a></li>
+                <li><a href="Formtofill.html">Form to fill</a></li>
+                <li><a href="variable change.html">variable change</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <center>
+        <section id="Formtofill.html">
+            <h1>Form To Fill</h1>
+            <form>
+                <fieldset>
+                    <legend>form</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="name" required>
+                    <br>
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="name" placeholder="Enter your Email" required>
+                    <br>
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <br>
+                     <label for="Gender">Gender:</label>
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" name="gender" valiue="female">
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" valiue="male">
+                    <br>
+                    <label for="Country"label>Country:</label>
+                    <select>
+                        <option value="choose your country"> choose your country</option>
+                        <option value="INDIA">INDIA</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="EGYPT">EGYPT</option>
+                        <option value="ICELAND">ICELAND</option>
+                        <option value="SINGAPORE">SINGAPORE</option>
+                    </select>
+                    <br> 
+                    <label for="Date of birth">date of birth:</label>
+                    <input type="date" id="birth">>
+                    <br>
+                    <button type="submit"> submit </button>
+                </fieldset>
+            </form>
+            <style>
+                body{
+                    background-color: aqua;
+                }
+            </style>
+        </section>
+        </center>
+    </body>
+</html>

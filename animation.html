@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Nav Bar</title>
+       <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <nav class="navbar-inverse" style="position:sticky;top:0; z-index:100px;">
+        <div class="navbar-header">
+            <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="#">Anusha</a>
+        </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                <li><a href="#Marquee"> Marquee</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="mediaQueries.html">mediaQueries</a></li>
+                <li><a href="show&hide.html">show&hide</a></li>
+                <li><a href="Formtofill.html">Form to fill</a></li>
+                <li><a href="variable change.html">variable change</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <section id="animation.html">
+            <style>
+
+        #img{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            animation-name: GFG;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+ 
+        @keyframes GFG {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+ 
+            25% {
+                left: 200px;
+                top: 200px;
+            }
+ 
+            50% {
+                left: 200px;
+                top: 0px;
+            }
+ 
+            75% {
+                left: 0px;
+                top: 200px;
+            }
+ 
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+ 
+<body>
+    <img id="img" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+</body>
+
+
+
+            
+            </section>
+    </body>
+</html>
+        

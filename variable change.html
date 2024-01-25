@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Nav Bar</title>
+       <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body> 
+        <nav class="navbar-inverse" style="position:sticky;top:0; z-index:100px;">
+        <div class="navbar-header">
+            <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="#">Anusha</a>
+        </div>
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                <li><a href="marquee.html"> Marquee</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="mediaQueries.html">mediaQueries</a></li>
+                <li><a href="show&hide.html">show&hide</a></li>
+                <li><a href="Formtofill.html">Form to fill</a></li>
+                <li><a href="variable change.html">variable change</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <section id="variable change.html">
+        <center>
+            <h1 style="text-align:center;">COUNTER</h1>
+            <span>
+                <button onclick="decrease()" >
+                    <img src="Screenshot%20(6).png"style="height:100px;width:100px;"></button>
+                <button onclick="increase()">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTes07iNs9pxokOtY0bory_jW_4KD3jKoBNxg&usqp=CAU "style="height:100px;width:100px; b"> </button>
+            </span>
+            <div>
+                <label><b>score:</b></label>
+            </div>
+            <div id="box">0</div>
+        </center>
+            <style>
+                body{
+                    background-image: url('https://www.shutterstock.com/image-illustration/abstract-descending-chart-bar-graph-600nw-704216149.jpg');
+                    
+                }
+            </style>
+    <script>
+        var score=0;
+function decrease(){
+    score=score-10;
+    document.getElementById("box").textContent=score;
+}
+function increase(){
+    score=score+10;
+    document.getElementById("box").textContent=score;
+}
+    </script>
+        </section>
+    </body>
+    
+    
+</html>
+    
+    
+
+    
